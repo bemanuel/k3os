@@ -295,7 +295,7 @@ as `k3os.install.efi=true`.
 
 Configuration is applied in three distinct phases: `initrd`, `boot`, `runtime`. `initrd`
 is run during the initrd phase before the root disk has been mounted.  `boot` is run after
-the root disk is mounted an the file system is setup, but before any services have started.
+the root disk is mounted and the file system is setup, but before any services have started.
 There is no networking available yet at this point. The final stage `runtime` is executed after
 networking has come online.  If you are using a configuration from a cloud provider (like AWS
 userdata) it will only be ran in the `runtime` phase.  Below is a table of which config keys
@@ -454,16 +454,17 @@ disk and run it from these commands.  That often makes it easier to do longer fo
 
 ### `k3os.data_sources`
 
-These are the data sources used for download config from cloud provider. The valid options are
+These are the data sources used for download config from cloud provider. The valid options are:
 
     aws
+    cdrom
+    digitalocean
     gcp
+    hetzner
     openstack
     packet
     scaleway
     vultr
-    hetzner
-    cdrom
 
 More than one can be supported at a time, for example:
 
