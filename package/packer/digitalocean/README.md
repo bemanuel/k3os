@@ -16,7 +16,7 @@ packer build -var-file=vars.json template.json
 | --- | ----------- |
 | do_token | [Token](https://cloud.digitalocean.com/account/api/tokens) |
 | iso_url | K3Os [Release](https://github.com/rancher/k3os/releases) |
-| region | DO Region |
+| region | DO [Region](https://www.digitalocean.com/docs/platform/availability-matrix/) |
 
 ## Notes
 
