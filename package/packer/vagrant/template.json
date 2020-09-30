@@ -20,8 +20,7 @@
       "format": "ova",
       "guest_os_type": "Linux_64",
       "http_directory": ".",
-      "iso_checksum": "{{user `iso_checksum`}}",
-      "iso_checksum_type": "sha256",
+      "iso_checksum": "{{user `iso_checksum_type`}}:{{user `iso_checksum`}}",
       "iso_url": "{{user `iso_url`}}",
       "post_shutdown_delay": "10s",
       "shutdown_command": "sudo poweroff",
@@ -39,8 +38,9 @@
     }
   ],
   "variables": {
-    "iso_checksum": "39542f9c0c597c139f0ad4bb7fe24b0a0b53f72b6602094155d1aa7730c87c10",
-    "iso_url": "https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso",
+    "iso_checksum": "ab15fcd4c4f5ed8805932523f85594f6844fe611fc50f8bc9a82ddd9bd326db0",
+    "iso_checksum_type": "sha256",
+    "iso_url": "https://github.com/rancher/k3os/releases/download/v0.11.1/k3os-amd64.iso",
     "password": "rancher"
   }
 }
