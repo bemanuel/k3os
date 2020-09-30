@@ -20,6 +20,8 @@ to use Vagrant
 
 ## Notes
 
+- Template tested on Packer version 1.6.2
+
 The generated box does not have the Virtualbox Guest Additions
 installed. Most of the configuration options will not work. this is
 specially true for:
