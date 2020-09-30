@@ -1,0 +1,7 @@
+{
+    "do_token": "{{ env `do_token` }}",
+    "iso_url": "{{ env `iso_url` }}",
+    "region": "nyc3",
+    "system_image": "ubuntu-20-04-x64",
+    "size": "s-1vcpu-1gb"
+}
